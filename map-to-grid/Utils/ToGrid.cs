@@ -24,8 +24,8 @@ namespace map_to_grid.Utils
         public void GetData(string path)
         {
             List <DateTime> toDateTime = new List<DateTime>();
-            List<DateTime> toDateTimeStr = new List<DateTime>();
             List<string> doc = new List<string>();
+
             gridTime = new List<TimeSpan>();
             time = new List<string>();
             dur = new List<string>();
@@ -43,8 +43,8 @@ namespace map_to_grid.Utils
             {
                 if (i == time.Count - 1)
                 {
-                    toNight();
-                    gridTime.Add(TimeSpan.Parse(time[i]) + toNight());
+                    fixedLastElement();
+                    gridTime.Add(TimeSpan.Parse(time[i]) + fixedLastElement());
                     break;
                 }
                 gridTime.Add(TimeSpan.Parse(time[i]) + TimeSpan.Parse(dur[i]));
@@ -57,10 +57,10 @@ namespace map_to_grid.Utils
 
             doc = toDateTime.Select(x => x.ToString("HH:mm")).ToList();
 
-            File.WriteAllLines($"{path.Replace("Mapas", "Grades").Replace("13-10-2023.txt", "13-10-2022.txt")}", doc);
+            File.WriteAllLines($"{path.Replace("Mapas", "Grades").Replace("13-10-2023.txt", "13-10-2023.txt")}", doc);
 
 
-            TimeSpan toNight()
+            TimeSpan fixedLastElement()
             {
                 TimeSpan lastElement = new TimeSpan();
                 lastElement = TimeSpan.Parse(dur.Last());
