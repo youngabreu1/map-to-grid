@@ -43,7 +43,6 @@ namespace map_to_grid.Utils
             {
                 if (i == time.Count - 1)
                 {
-                    fixedLastElement();
                     gridTime.Add(TimeSpan.Parse(time[i]) + fixedLastElement());
                     break;
                 }
@@ -57,7 +56,7 @@ namespace map_to_grid.Utils
 
             doc = toDateTime.Select(x => x.ToString("HH:mm")).ToList();
 
-            File.WriteAllLines($"{path.Replace("Mapas", "Grades").Replace("13-10-2023.txt", "13-10-2023.txt")}", doc);
+            File.WriteAllLines($"{path.Replace("Mapas", "Grades").Replace("13-10-2023.txt", "13-10-2024.txt")}", doc);
 
 
             TimeSpan fixedLastElement()
