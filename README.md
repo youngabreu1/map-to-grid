@@ -8,7 +8,7 @@ Esta é uma aplicação simples que utiliza como base a pasta “Mapas” do Pla
 
 Com esta aplicação, fica fácil criar um arquivo do tipo “Relógio” para a pasta Grades do Playlist a partir dos horários dos seus comerciais.
 
-“Mapas” é a pasta que representa a programação comercial do Playlist Digital, enquanto a pasta “Grades” representa a programação musical. Tendo isso em mente, esta aplicação tem como objetivo simplificar o uso do Playlist, realizando essa interação entre as duas pastas, de modo que os horários da programação musical sejam gerados a partir do horário e duração dos blocos comerciais.
+“Mapas” é a pasta que representa a programação comercial do Playlist Digital, enquanto a pasta “Grades” representa a programação musical. Tendo isso em mente, esta aplicação tem como objetivo simplificar o uso do Playlist, realizando essa interação entre as duas pastas, de modo que os horários da programação musical sejam gerados levando em consideração os intervalos entre os blocos comerciais.
 
 
 ## Como funciona
