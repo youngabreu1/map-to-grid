@@ -10,6 +10,7 @@ Com esta aplicação, fica fácil criar um arquivo do tipo “Relógio” para a
 
 “Mapas” é a pasta que representa a programação comercial do Playlist Digital, enquanto a pasta “Grades” representa a programação musical. Tendo isso em mente, esta aplicação tem como objetivo simplificar o uso do Playlist, realizando essa interação entre as duas pastas, de modo que os horários da programação musical sejam gerados a partir do horário e duração dos blocos comerciais.
 
+
 ## Como funciona
 
 
@@ -17,12 +18,21 @@ O programa obtém o horário e a duração dos seus blocos comerciais e executa 
 
 Este arquivo é totalmente formatado e de fácil utilização. Basta indicar o caminho do arquivo comercial do qual você deseja criar um “Relógio”.
 
-  
-## Requisitos
 
-- .NET Core SDK [Instalar](https://dotnet.microsoft.com/download)
+
+## Requisitos Funcionais
+
+ - Leitura de mapa comercial: Ler um arquivo de mapa do bloco comercial;
+
+ - Exportar relógio musical: Salvar um arquivo com os horários do bloco comercial.
+
+## Requisitos não Funcionais
+
+ - Interface para facilitar a utilização do usuário
+
 
 ## Como usar
+
 
 1. Clone o repositório:
 
@@ -34,6 +44,8 @@ Este arquivo é totalmente formatado e de fácil utilização. Basta indicar o c
 3. Execute o aplicativo:
 
 4. Certifique-se de ter um arquivo de entrada no formato adequado no diretório Mapas. Os resultados serão salvos no diretório Grades.
+
+
 
 ## Contribuições
 
