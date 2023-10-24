@@ -24,7 +24,7 @@ Este arquivo é totalmente formatado e de fácil utilização. Basta indicar o c
 
  - Leitura de mapa comercial: Ler um arquivo de mapa do bloco comercial;
 
- - Exportar relógio musical: Salvar um arquivo com os horários do bloco comercial.
+ - Exportar relógio musical: Salvar um arquivo com os horários do bloco musical.
 
 ## Requisitos não Funcionais
 
